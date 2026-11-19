@@ -1,9 +1,9 @@
-# Auto-MoShou
+# Auto-WOW
 
 > **面向真实桌面的声明式建号智能体技能（Agent Skill）**
 > 不可修改项强制用户决策 · 可修改项自动默认/随机 · 全量选项枚举 · 逐帧视觉感知 · 状态机驱动 · 异常自愈重试
 
-`Auto-MoShou` 不是一个可执行程序，而是一份给 Agent 加载的**技能定义**：它把《魔兽世界：无限服》的角色创建流程拆成可验证的状态机，让具备桌面操作能力的 Agent 在**用户真实桌面**上完成「规则集 → 阵营 → 种族 → 职业 → 外观/体型 → 姓名 → 提交」的闭环，并在「阵营人口不平衡」或名称不可用时自动回退重试。
+`Auto-WOW` 不是一个可执行程序，而是一份给 Agent 加载的**技能定义**：它把《魔兽世界：无限服》的角色创建流程拆成可验证的状态机，让具备桌面操作能力的 Agent 在**用户真实桌面**上完成「规则集 → 阵营 → 种族 → 职业 → 外观/体型 → 姓名 → 提交」的闭环，并在「阵营人口不平衡」或名称不可用时自动回退重试。
 
 ## 决策分层（核心原则）
 
@@ -54,7 +54,7 @@ flowchart LR
 1. 将本仓库内容放到 Agent 的技能目录，例如：
 
    ```
-   C:\Users\Administrator\.codebuddy\skills\Auto-MoShou\
+   C:\Users\Administrator\.codebuddy\skills\Auto-WOW\
        SKILL.md
        references\flow-states.md
    ```
@@ -169,7 +169,7 @@ Agent 在用户选好种族后，只列出**该种族的全部合法职业**；�
 ## 目录结构
 
 ```
-Auto-MoShou/
+Auto-WOW/
 ├── SKILL.md                    # 主手册：决策分层、全量选项、状态机、异常分支、成功判定
 └── references/
     └── flow-states.md          # 界面识别、坐标约定、等待节奏、异常处置矩阵
