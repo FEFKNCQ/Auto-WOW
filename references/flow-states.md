@@ -134,8 +134,8 @@
 {
   "profiles": {
     "1920x1080|fullscreen|PVP|char-create": {
-      "亡灵头像": {"x": 412, "y": 305, "offsetX": -4, "offsetY": 3, "ok": 12, "fail": 0},
-      "圣骑士":   {"x": 508, "y": 842, "offsetX": 0,  "offsetY": 0, "ok": 12, "fail": 0}
+      "亡灵头像": {"x": 412, "y": 305, "offsetX": -4, "offsetY": 3, "ok": 12, "fail": 0, "lastInput": "mouse"},
+      "圣骑士":   {"x": 508, "y": 842, "offsetX": 0,  "offsetY": 0, "ok": 12, "fail": 0, "lastInput": "mouse"}
     }
   }
 }
@@ -143,7 +143,7 @@
 
 - `ok≥3` 且 `fail=0` 视为熟练，后续跳过悬停直接点；首次运行不要催速度。
 - 分辨率 / 窗口尺寸 / 游戏版本变化 → 对应 profile 失效，重新标定。
-- 弹窗用回车、命名框用 Tab 确认焦点；能用键盘就不赌鼠标坐标。
+- **键盘优先**：弹窗回车；按钮已聚焦用 Enter / Space；命名框 Tab / Shift+Tab + Ctrl+A；规则单选可用方向键但必须确认高亮；Esc 退出当前界面。焦点不确定就回退已标定的鼠标中心点击，键盘结果也写入记忆 `lastInput`。
 
 ## 卡住处理（退出重进，不按次数/秒数停机）
 
